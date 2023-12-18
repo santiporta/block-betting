@@ -1,5 +1,5 @@
 {
-  "name": "vintage-poker",
+  "name": "hr-poker",
   "version": "1.0.0",
   "description": "A full-stack poker web-app",
   "main": "./server/server.js",
@@ -10,7 +10,6 @@
     "start:client": "npm start --prefix client",
     "dev": "concurrently \"npm run dev:server\" \"npm run start:client\""
   },
-  "author": "Patrick Obermeier <patrick.obermeier@outlook.com>",
   "private": "true",
   "license": "UNLICENSED",
   "dependencies": {
