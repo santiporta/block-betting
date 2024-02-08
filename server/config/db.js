@@ -3,11 +3,14 @@ const config = require('../config');
 
 const connectDB = async () => {
   try {
+    console.log('Connecting MongoDB...');
+
     const db = await mongoose.connect(config.MONGO_URI, {
       useNewUrlParser: true,
       useCreateIndex: true,
       useFindAndModify: false,
       useUnifiedTopology: true,
+      connectTimeoutMS: 5000,      
     });
     console.log('Successfully connected to MongoDB!');
 

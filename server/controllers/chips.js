@@ -6,7 +6,8 @@ const User = require('../models/User');
 // @access  Private
 exports.handleFreeChipsRequest = async (req, res) => {
   try {
-    const user = await User.findById(req.user.id).select('-password');
+    
+    const user = await User.findById(req.user.id).select('-password');    
     if (user.chipsAmount <= 0) {
       user.chipsAmount += INITIAL_CHIPS_AMOUNT;
       await user.save();

@@ -13,7 +13,7 @@
   "private": "true",
   "license": "UNLICENSED",
   "dependencies": {
-    "axios": "^1.4.0",
+    "axios": "^1.6.7",
     "bcryptjs": "^2.4.3",
     "child_process": "^1.0.2",
     "contentful-cli": "^1.12.17",
@@ -35,8 +35,8 @@
     "path": "^0.12.7",
     "pokersolver": "^2.1.4",
     "request": "^2.88.2",
-    "sqlite3": "^5.1.6",
     "socket.io": "^2.3.0",
+    "sqlite3": "^5.1.6",
     "underscore": "^1.11.0",
     "xss-clean": "^0.1.1"
   },

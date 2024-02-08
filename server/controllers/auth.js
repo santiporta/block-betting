@@ -48,7 +48,7 @@ exports.login = async (req, res) => {
         id: user.id,
       },
     };
-
+    console.log(config.JWT_TOKEN_EXPIRES_IN)
     jwt.sign(
       payload,
       config.JWT_SECRET,
